@@ -60,7 +60,7 @@ else {
 
 function ask(question, answers) {
   var answer = readLineSync.question(question);
-  if (answer === answers) {
+  if (answer.toLowerCase() === answers.toLowerCase()) {
     console.log(chalk.blue("You are Right"));
     score++;
   }
