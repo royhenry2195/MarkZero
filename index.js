@@ -45,14 +45,14 @@ for (var i = 0; i < queArr.length; i++) {
 
 if (highScore[0].score < score) {
   //var object = ;
- 
+
   highScore = [];
   var obj = {};
-obj["name"] = userName;
-obj["score"] = score;
-highScore.push(obj);
+  obj["name"] = userName;
+  obj["score"] = score;
+  highScore.push(obj);
 
-   console.log(chalk.green("Yippiee..."+userName+" You break the Highest Score , New Highest Score is : " + score));
+  console.log(chalk.green("Yippiee..." + userName + " You break the Highest Score , New Highest Score is : " + score));
 }
 else {
   console.log(chalk.green("Your Score is : " + score));
