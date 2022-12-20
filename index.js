@@ -2,12 +2,11 @@
 
 var readLineSync = require('readline-sync');
 var chalk = require('chalk');
-//console.log( chalk.yellow ("Henry Roy")); 
 
 var score = 0;
 
 var userName = readLineSync.question('Please Enter Your Good Name : ');
-console.log("Welcome " + userName);
+console.log(chalk.yellow("Welcome " + userName));
 
 var queArr = [
   {
@@ -44,7 +43,6 @@ for (var i = 0; i < queArr.length; i++) {
 }
 
 if (highScore[0].score < score) {
-  //var object = ;
 
   highScore = [];
   var obj = {};
@@ -66,7 +64,7 @@ function ask(question, answers) {
   }
   else {
     console.log(chalk.red("You are wrong"));
-    //score--;
+    score--;
   }
 }
 
